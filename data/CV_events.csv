@@ -1,0 +1,25 @@
+Start,End,What,With,Where,Tag,Why
+01/10/2017,Present,Post-doctoral researcher,University of Oslo,"Oslo, Norway",Research,My main project focuses on study the likely association between mutations at cis-regulatory regions and  dysregulation the miRNA networks
+01/08/09,01/07/13,Bachelor in genomic sciences,Universidad Nacional Autonoma de Mexico,"Cuernavaca, Mexico",Education,Graduated with honors. Thesis supervised by PhD Julio Collado-Vides and PhD Alejandra Medina-Rivera
+01/09/13,01/07/14,Master in systems biology,Institute de biology de l'Ecole Normale Superieure,"Paris, France",Education,Thesis supervised by PhD Jacques van Helden.
+01/10/14,01/07/17,PhD in bioinformatics,Aix-Marseille Universite,"Marseille, France",Education,Graduated with honors. Thesis supervised by PhD Jacques van Helden. 6 publication derived from the thesis work.
+,,Spanish,,,Languages,Native speaker
+,,English,,,Languages,Fluent
+,,French,,,Languages,Fluent
+07/21/19,07/25/19,Travel fellowship to present a talk at ISMB/ECCB 2019,International Society of Computational Biology,,Honors_prices,
+01/10/14,01/07/17,PhD scholarship from Ecole Doctorale Sciences de la Vie et de la Sancte,,,Honors_prices,
+01/09/13,01/07/14,CONACYT (Consejo NAcional de ciencia y Teconologia) scholarship for Master studies,,,Honors_prices,
+01/02/13,01/06/13,Programming with R,Bachelor in genomic sciences program,"Cuernavaca, Mexico",Teaching,Teaching assistant. Bachelor level
+01/02/13,01/06/13,"Applications of the genomics, seminars.",Bachelor in genomic sciences program,"Cuernavaca, Mexico",Teaching,Teaching assistant. Bachelor level
+01/04/17,01/04/17,Analysis of Cis-Regulatory Sequences,Aix-Marseille Universite,"Marseille, France",Teaching,Teaching assistant. Master level
+07/22/19,07/22/19,Combining transcriptional and post-transcriptional regulation to predict mutations altering the gene regulatory program in cancer cells,ISMB/ECCB 2019,"Basel, Switzerland",Presentations,
+01/11/16,01/11/16,RSAT matrix-clustering: dynamic exploration and redundancy reduction of transcription factor binding motif collections.,1st Student Symposium on Computational Genomics,"Mainz,Germany",Presentations,
+,,"Proficient. Use of ggplot, tidyverse, Rmarkdown.",R,,Comp_skills,
+,,Proficient,Perl,,Comp_skills,
+,,Proficient,Git,,Comp_skills,
+,,Proficient. Development of pipelines for analysis og high-throughput data,Snakemake,,Comp_skills,
+,,Intermediate,Python,,Comp_skills,
+,,Intermediate,Make,,Comp_skills,
+,,Intermediate,Bash,,Comp_skills,
+,,Intermediate,D3,,Comp_skills,
+,,"Experience with biological databases like TCGA, roadmap epigenomics, ENCODE.",Other,,Comp_skills,
