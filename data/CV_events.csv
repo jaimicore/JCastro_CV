@@ -1,5 +1,5 @@
 Start,End,What,With,Where,Tag,Why
-01/10/2017,Present,Post-doctoral researcher,University of Oslo,"Oslo, Norway",Research,My main project focuses on study the likely association between mutations at cis-regulatory regions and  dysregulation the miRNA networks
+01/10/2017,Present,Post-doctoral researcher,University of Oslo,"Oslo, Norway",Research,"My main project focuses on study the likely association between mutations at cis-regulatory regions and dysregulation the miRNA networks. Besides this project, I am leading the upcoming release of the JASPAR database. Supervisor: Anthony Matelier."
 01/08/09,01/07/13,Bachelor in genomic sciences,Universidad Nacional Autonoma de Mexico,"Cuernavaca, Mexico",Education,Graduated with honors. Thesis supervised by PhD Julio Collado-Vides and PhD Alejandra Medina-Rivera
 01/09/13,01/07/14,Master in systems biology,Institute de biology de l'Ecole Normale Superieure,"Paris, France",Education,Thesis supervised by PhD Jacques van Helden.
 01/10/14,01/07/17,PhD in bioinformatics,Aix-Marseille Universite,"Marseille, France",Education,Graduated with honors. Thesis supervised by PhD Jacques van Helden. 6 publication derived from the thesis work.
@@ -14,12 +14,16 @@ Start,End,What,With,Where,Tag,Why
 01/04/17,01/04/17,Analysis of Cis-Regulatory Sequences,Aix-Marseille Universite,"Marseille, France",Teaching,Teaching assistant. Master level
 07/22/19,07/22/19,Combining transcriptional and post-transcriptional regulation to predict mutations altering the gene regulatory program in cancer cells,ISMB/ECCB 2019,"Basel, Switzerland",Presentations,
 01/11/16,01/11/16,RSAT matrix-clustering: dynamic exploration and redundancy reduction of transcription factor binding motif collections.,1st Student Symposium on Computational Genomics,"Mainz,Germany",Presentations,
-,,"Proficient. Use of ggplot, tidyverse, Rmarkdown.",R,,Comp_skills,
+,,"Proficient. Use of ggplot, tidyverse, Rmarkdown, Rcpp.",R,,Comp_skills,
 ,,Proficient,Perl,,Comp_skills,
 ,,Proficient,Git,,Comp_skills,
-,,Proficient. Development of pipelines for analysis og high-throughput data,Snakemake,,Comp_skills,
+,,Proficient. Development of pipelines for analysis of high-throughput data,Snakemake,,Comp_skills,
 ,,Intermediate,Python,,Comp_skills,
 ,,Intermediate,Make,,Comp_skills,
 ,,Intermediate,Bash,,Comp_skills,
 ,,Intermediate,D3,,Comp_skills,
-,,"Experience with biological databases like TCGA, roadmap epigenomics, ENCODE.",Other,,Comp_skills,
+,,"Experience with biological databases like TCGA, ICGC, roadmap epigenomics, ENCODE.",Other,,Comp_skills,
+,,13/02/90,Date of birth,,Personalia,
+,,Mexican,Citizenship,,Personalia,
+,,1,Children,,Personalia,
+09/03/21,21/06/21,Spring 2021,Paternity leave,,Personalia,
