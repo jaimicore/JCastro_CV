@@ -26,17 +26,28 @@ library(glue)
 ```
 
 
-```{r experience, inclue=FALSE}
+```{r data, inclue=FALSE}
 jobs.raw <- read_csv(here::here("data", "CV_events.csv"))
 jobs <-
   jobs.raw %>% 
   fill(Start, End, What, With, Where, Tag) %>%  
   dplyr::mutate(Start = mdy(Start),
-                End = mdy(End)) %>% 
-  dplyr::mutate(When = case_when(is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
+                End   = mdy(End)) %>% 
+  dplyr::mutate(When  = case_when(is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
                                  year(Start) == year(End) ~ year(End) %>% as.character(),
                                  TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
   ))
+```
+
+# Personalia
+
+```{r personalia, inclue=FALSE}
+jobs %>% 
+  dplyr::filter(Tag == "Personalia") %>% 
+  #arrange(desc(Start)) %>% 
+  detailed_entries(what  = What,
+                   #when  = When,
+                   with  = With)
 ```
 
 
@@ -170,19 +181,19 @@ jobs %>%
 
 ## Posters
 
-7. *Combining transcriptional and post-transcriptional regulation to predict mutations altering the gene regulatory program in cancer cells*. ISM/ECCB, 2019. (doi: https://f1000research.com/posters/8-1286)
+1. *Combining transcriptional and post-transcriptional regulation to predict mutations altering the gene regulatory program in cancer cells*. ISM/ECCB, 2019. (doi: https://f1000research.com/posters/8-1286)
 
-6. *Characterization of mutations that dysregulate driver microRNAs in cancer*. 4th anual NORBIS conference, 2018.
+2. *Characterization of mutations that dysregulate driver microRNAs in cancer*. 4th anual NORBIS conference, 2018.
 
-5. *Clustering and redundancy reduction of transcription factor binding motifs*.  1st Student Symposium on Computational Genomics, 2016.
+3. *Clustering and redundancy reduction of transcription factor binding motifs*.  1st Student Symposium on Computational Genomics, 2016.
 
 4. *Clustering and redundancy reduction of transcription factor binding motifs*. 15th ECCB (doi: 10.7490/f1000research.1113008.1), 2016.
 
-3. *Comparing and clustering multiple collections of DNA motifs using RSAT* 12th BC2 (doi: 10.7490/f1000research.1111391.1), 2015.
+5. *Comparing and clustering multiple collections of DNA motifs using RSAT* 12th BC2 (doi: 10.7490/f1000research.1111391.1), 2015.
 
-2. *Comparing, clustering and aligning Transcription Factor Binding Motifs with RSAT*. 13th ECCB. (**Castro J**, Thomas-Chollier M, Thieffry D and van Helden J Comparing, clustering and aligning transcription factor binding motifs with RSAT. F1000Posters 2014,5:1845 (poster)), 2014.
+6. *Comparing, clustering and aligning Transcription Factor Binding Motifs with RSAT*. 13th ECCB. (**Castro J**, Thomas-Chollier M, Thieffry D and van Helden J Comparing, clustering and aligning transcription factor binding motifs with RSAT. F1000Posters 2014,5:1845 (poster)), 2014.
 
-1. *Novel computational predictions of regulons based on the observed autoregulation of the network*. 5th IECA Conference 2011. Gene Regulatory Networks
+7. *Novel computational predictions of regulons based on the observed autoregulation of the network*. 5th IECA Conference 2011. Gene Regulatory Networks
 in the Enterobacteriaceae, 2011.
 
 
