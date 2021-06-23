@@ -152,9 +152,11 @@ See the complete list of publications (including preprints) and citations in my 
 
 ## Preprints
 
-1. Riudavets Puig R, Boddie P, Khan A, **Castro-Mondragon JA**, and Mathelier A#. *UniBind: maps of high-confidence direct TF-DNA interactions across nine species*. bioRxiv (2020)
+1. Saha S\*, Spinelli L\*, **Castro-Mondragon JA**, Kervadec A, Kremmer L, Roder L, Sallouha J, Torres M, Brun C, Vogler G, Bodmer R, Colas AR#, Ocorr K#, and Perrin L#. *Genetic architecture of natural variations of cardiac performance in flies*. bioRxiv (2021)
 
-2. **Castro-Mondragon JA**, Ragle Aure M, Lingjærde OC, Langerød A, Martens JWM, Børresen-Dale AL, Kristensen VN, and Mathelier A#. *Cis-regulatory mutations associate with transcriptional and post-transcriptional deregulation of the gene regulatory program in cancers*. bioRxiv (2020)
+2. Riudavets Puig R, Boddie P, Khan A, **Castro-Mondragon JA**, and Mathelier A#. *UniBind: maps of high-confidence direct TF-DNA interactions across nine species*. bioRxiv (2020)
+
+3. **Castro-Mondragon JA**, Ragle Aure M, Lingjærde OC, Langerød A, Martens JWM, Børresen-Dale AL, Kristensen VN, and Mathelier A#. *Cis-regulatory mutations associate with transcriptional and post-transcriptional deregulation of the gene regulatory program in cancers*. bioRxiv (2020)
 
 
 # Reviewed manuscripts
