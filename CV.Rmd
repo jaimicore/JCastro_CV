@@ -221,3 +221,15 @@ jobs %>%
                    what = What)
 ```
 
+
+# References
+
+```{r References}
+jobs %>% 
+  dplyr::filter(Tag == "References") %>% 
+  detailed_entries(with  = With,
+                   what  = What,
+                   why   = Why,
+                   where = Where)
+```
+
