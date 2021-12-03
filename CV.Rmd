@@ -12,9 +12,6 @@ headcolor: 414141
 output: 
   vitae::awesomecv:
     keep_tex: true
-    pandoc_args: [
-       "--filter", "pandoc-citeproc"
-     ]
 ---
 
 
