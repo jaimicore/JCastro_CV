@@ -7,6 +7,7 @@ Start,End,What,With,Where,Tag,Why
 ,,Spanish,,,Languages,Native speaker
 ,,English,,,Languages,Fluent
 ,,French,,,Languages,Fluent
+,,Norwegian,,,Languages,Beginner
 21/07/19,25/07/19,Travel fellowship to present a talk at ISMB/ECCB 2019,International Society of Computational Biology,,Honors_prices,
 01/10/14,01/07/17,PhD scholarship from Ecole Doctorale Sciences de la Vie et de la Sancte,,,Honors_prices,
 01/09/13,01/07/14,CONACYT (Consejo NAcional de ciencia y Teconologia) scholarship for Master studies,,,Honors_prices,
@@ -15,11 +16,12 @@ Start,End,What,With,Where,Tag,Why
 01/04/17,01/04/17,Analysis of Cis-Regulatory Sequences,Aix-Marseille Universite,"Marseille, France",Teaching,Teaching assistant. Master level
 22/07/19,22/07/19,Combining transcriptional and post-transcriptional regulation to predict mutations altering the gene regulatory program in cancer cells,ISMB/ECCB 2019,"Basel, Switzerland",Presentations,
 01/11/16,01/11/16,RSAT matrix-clustering: dynamic exploration and redundancy reduction of transcription factor binding motif collections.,1st Student Symposium on Computational Genomics,"Mainz,Germany",Presentations,
-,,"Proficient. Use of ggplot, tidyverse, Rmarkdown, Rcpp.",R,,Comp_skills,
+,,"Proficient. Use of ggplot, tidyverse, Rmarkdown, Rcpp, S4 objects.",R,,Comp_skills,
 ,,Proficient,Perl,,Comp_skills,
 ,,Proficient,Git,,Comp_skills,
 ,,Proficient. Development of pipelines for analysis of high-throughput data,Snakemake,,Comp_skills,
-,,Intermediate,Python,,Comp_skills,
+,,"Intermediate. Use of pandas, seaborn, plotly, numpy, object-oriented classes.",Python,,Comp_skills,
+,,Intermediate,Docker,,,
 ,,Intermediate,Make,,Comp_skills,
 ,,Intermediate,Bash,,Comp_skills,
 ,,Intermediate,D3,,Comp_skills,
