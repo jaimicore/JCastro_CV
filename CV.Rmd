@@ -1,7 +1,7 @@
 ---
 name: Jaime A Castro-Mondragon
-position: Post-doctoral researcher
-address: Computational biology and gene regulation group, University of Oslo
+position: Bioinformatician (Scientist level II)
+address: Nykode Therapeutics ASA
 www: jaimicore.github.io
 email: jacmondragon@nykode | j.a.castro.mondragon@gmail.com
 twitter: jaimicore
@@ -166,7 +166,7 @@ See the complete list of publications (including preprints) and citations in my 
 
 ## Preprints
 
-For the moment I don’t have any publication as a preprint.
+1. Rauluseviciute I, Launay T, Barzaghi G, Nikumbh S, Lenhard B, Krebs AR, **Castro-Mondragon JA**, and Mathelier A. *Identification of transcription factor co-binding patterns with non-negative matrix factorization.*. bioRxiv (2023)
 
 
 # Reviewed manuscripts
