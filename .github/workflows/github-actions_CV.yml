@@ -41,4 +41,4 @@ jobs:
 
       - name: Knit JACM CV
         run: |
-          Rscript -e 'library(rmarkdown); rmarkdown::render("Jaime_Castro_CV.Rmd", "Jaime_Castro_CV.pdf")'
+          Rscript -e 'library(rmarkdown); rmarkdown::render("Jaime_Castro_CV.Rmd", "pdf_document")'
