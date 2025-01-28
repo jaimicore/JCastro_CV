@@ -97,6 +97,8 @@ jobs %>%
 # Languages
 
 ```{r Languages, results='markup'}
+
+# Adapted from: https://github.com/loreabad6/R-CV/blob/master/CV.Rmd
 # jobs %>% 
 #   dplyr::filter(Tag == "Languages") %>% 
 #   detailed_entries(what = What,
