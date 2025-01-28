@@ -1,17 +1,25 @@
 ---
 name: Jaime A Castro-Mondragon
 position: Bioinformatician (Scientist level II)
-address: Nykode Therapeutics AS
+address: Oslo, Norway
 www: jaimicore.github.io
-email: jacmondragon@nykode | j.a.castro.mondragon@gmail.com
-twitter: jaimicore
+email: j.a.castro.mondragon@gmail.com
+linkedin: jaime-castro-mondragon
+bluesky: jaimicore
 github: jaimicore
 date: "`r format(Sys.time(), '%B %Y')`"
 profilepic: data/Jaime.jpg
-headcolor: 414141
+headcolor: 009ACD
+aboutme: ""
 output: 
   vitae::awesomecv:
     keep_tex: true
+    show_footer: true
+includes:
+  in_header: header.txt
+always_allow_html: yes
+editor_options:
+  chunk_output_type: console
 ---
 
 
@@ -42,15 +50,18 @@ jobs <-
   ))
 ```
 
-# Personalia
 
-```{r personalia, inclue=FALSE}
+# Research/Working Experience
+
+```{r research_work}
 jobs %>% 
-  dplyr::filter(Tag == "Personalia") %>% 
-  #arrange(desc(Start)) %>% 
+  dplyr::filter(Tag == "Work/Research") %>% 
+  arrange(desc(Start)) %>% 
   detailed_entries(what  = What,
-                   #when  = When,
-                   with  = With)
+                   when  = When,
+                   with  = With,
+                   where = Where,
+                   why   = Why)
 ```
 
 
@@ -68,43 +79,49 @@ jobs %>%
 ```
 
 
-# Research/Working Experience
+# Computational skills
 
-```{r research_work}
+```{r Comp_skills}
 jobs %>% 
-  dplyr::filter(Tag == "Work/Research") %>% 
-  arrange(desc(Start)) %>% 
-  detailed_entries(what  = What,
-                   when  = When,
-                   with  = With,
-                   where = Where,
-                   why   = Why)
+  dplyr::filter(Tag == "Comp_skills") %>% 
+  detailed_entries(with = With,
+                   what = What)
 ```
 
 
-# Awards and Honors
+# Languages
 
-```{r awards}
+```{r Languages}
 jobs %>% 
-  dplyr::filter(Tag == "Honors_prices") %>% 
-  arrange(desc(Start)) %>% 
+  dplyr::filter(Tag == "Languages") %>% 
   detailed_entries(what = What,
-                   when = When)
+                   why  = Why)
 ```
 
 
-# Teaching Experience
+<!-- # Awards and Honors -->
 
-```{r teaching}
-jobs %>%
-  dplyr::filter(Tag == "Teaching") %>%
-  arrange(desc(Start)) %>% 
-  detailed_entries(what  = What,
-                   when  = When,
-                   with  = With,
-                   where = Where,
-                   why   = Why)
-```
+<!-- ```{r awards} -->
+<!-- jobs %>%  -->
+<!--   dplyr::filter(Tag == "Honors_prices") %>%  -->
+<!--   arrange(desc(Start)) %>%  -->
+<!--   detailed_entries(what = What, -->
+<!--                    when = When) -->
+<!-- ``` -->
+
+
+<!-- # Teaching Experience -->
+
+<!-- ```{r teaching} -->
+<!-- jobs %>% -->
+<!--   dplyr::filter(Tag == "Teaching") %>% -->
+<!--   arrange(desc(Start)) %>%  -->
+<!--   detailed_entries(what  = What, -->
+<!--                    when  = When, -->
+<!--                    with  = With, -->
+<!--                    where = Where, -->
+<!--                    why   = Why) -->
+<!-- ``` -->
 
 
 
@@ -183,58 +200,50 @@ No preprints at this moment.
 Reviewed manuscripts in the following journals: Bioinformatics, Genetics, Molecular Plant, Nucleic Acids Research, Genome biology, Genome Biology and Evolution, Frontiers in Genetics, eLife.
 
 
-# Presentations
+<!-- # Presentations -->
 
-## Talks
+<!-- ## Talks -->
 
-```{r presentations}
-jobs %>%
-  dplyr::filter(Tag == "Presentations") %>%
-  arrange(desc(Start)) %>% 
+<!-- ```{r presentations} -->
+<!-- jobs %>% -->
+<!--   dplyr::filter(Tag == "Presentations") %>% -->
+<!--   arrange(desc(Start)) %>%  -->
+<!--   detailed_entries(what  = What, -->
+<!--                    when  = When, -->
+<!--                    with  = With, -->
+<!--                    where = Where) -->
+<!-- ``` -->
+
+
+<!-- ## Posters -->
+
+<!-- 1. *Combining transcriptional and post-transcriptional regulation to predict mutations altering the gene regulatory program in cancer cells*. ISM/ECCB, 2019. (doi: https://f1000research.com/posters/8-1286) -->
+
+<!-- 2. *Characterization of mutations that dysregulate driver microRNAs in cancer*. 4th anual NORBIS conference, 2018. -->
+
+<!-- 3. *Clustering and redundancy reduction of transcription factor binding motifs*.  1st Student Symposium on Computational Genomics, 2016. -->
+
+<!-- 4. *Clustering and redundancy reduction of transcription factor binding motifs*. 15th ECCB (doi: 10.7490/f1000research.1113008.1), 2016. -->
+
+<!-- 5. *Comparing and clustering multiple collections of DNA motifs using RSAT* 12th BC2 (doi: 10.7490/f1000research.1111391.1), 2015. -->
+
+<!-- 6. *Comparing, clustering and aligning Transcription Factor Binding Motifs with RSAT*. 13th ECCB. (**Castro J**, Thomas-Chollier M, Thieffry D and van Helden J Comparing, clustering and aligning transcription factor binding motifs with RSAT. F1000Posters 2014,5:1845 (poster)), 2014. -->
+
+<!-- 7. *Novel computational predictions of regulons based on the observed autoregulation of the network*. 5th IECA Conference 2011. Gene Regulatory Networks -->
+<!-- in the Enterobacteriaceae, 2011. -->
+
+
+# Personalia
+
+```{r personalia, inclue=FALSE}
+jobs %>% 
+  dplyr::filter(Tag == "Personalia") %>% 
+  #arrange(desc(Start)) %>% 
   detailed_entries(what  = What,
-                   when  = When,
-                   with  = With,
-                   where = Where)
+                   #when  = When,
+                   with  = With)
 ```
 
-
-## Posters
-
-1. *Combining transcriptional and post-transcriptional regulation to predict mutations altering the gene regulatory program in cancer cells*. ISM/ECCB, 2019. (doi: https://f1000research.com/posters/8-1286)
-
-2. *Characterization of mutations that dysregulate driver microRNAs in cancer*. 4th anual NORBIS conference, 2018.
-
-3. *Clustering and redundancy reduction of transcription factor binding motifs*.  1st Student Symposium on Computational Genomics, 2016.
-
-4. *Clustering and redundancy reduction of transcription factor binding motifs*. 15th ECCB (doi: 10.7490/f1000research.1113008.1), 2016.
-
-5. *Comparing and clustering multiple collections of DNA motifs using RSAT* 12th BC2 (doi: 10.7490/f1000research.1111391.1), 2015.
-
-6. *Comparing, clustering and aligning Transcription Factor Binding Motifs with RSAT*. 13th ECCB. (**Castro J**, Thomas-Chollier M, Thieffry D and van Helden J Comparing, clustering and aligning transcription factor binding motifs with RSAT. F1000Posters 2014,5:1845 (poster)), 2014.
-
-7. *Novel computational predictions of regulons based on the observed autoregulation of the network*. 5th IECA Conference 2011. Gene Regulatory Networks
-in the Enterobacteriaceae, 2011.
-
-
-
-# Languages
-
-```{r Languages}
-jobs %>% 
-  dplyr::filter(Tag == "Languages") %>% 
-  detailed_entries(what = What,
-                   why  = Why)
-```
-
-
-# Computational skills
-
-```{r Comp_skills}
-jobs %>% 
-  dplyr::filter(Tag == "Comp_skills") %>% 
-  detailed_entries(with = With,
-                   what = What)
-```
 
 
 # References
