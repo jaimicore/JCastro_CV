@@ -155,9 +155,14 @@
 \setbool{acvSectionColorHighlight}{true}
 
 % Awesome section color
-\def\@sectioncolor#1#2#3{%
-  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
+% \def\@sectioncolor#1#2#3{%
+%   \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
+% }
+
+\def\@sectioncolor#1{%
+  \color{awesome}#1%
 }
+
 
 
 %-------------------------------------------------------------------------------
@@ -441,10 +446,10 @@
   \newlength{\headertextwidth}
   \newlength{\headerphotowidth}
   \ifthenelse{\isundefined{\@photo}}{
-    \setlength{\headertextwidth}{\textwidth}
+    \setlength{\headertextwidth}{\textwidth }
     \setlength{\headerphotowidth}{0cm}
   }{%
-    \setlength{\headertextwidth}{0.76\textwidth}
+    \setlength{\headertextwidth}{0.76\textwidth} 
     \setlength{\headerphotowidth}{0.24\textwidth}
   }%
   \begin{minipage}[c]{\headerphotowidth}%
