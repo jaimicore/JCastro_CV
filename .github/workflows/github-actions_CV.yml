@@ -52,3 +52,4 @@ jobs:
           git add Jaime_Castro_CV.pdf
           git commit -m "Update rendered CV PDF"
           git push origin HEAD
+
