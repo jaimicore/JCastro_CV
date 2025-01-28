@@ -42,9 +42,11 @@ jobs:
       - name: Knit JACM CV
         run: |
           Rscript -e 'library(rmarkdown); rmarkdown::render("Jaime_Castro_CV.Rmd", "pdf_document", output_options = list(keep_tex = TRUE, latex_engine = "xelatex"))' || exit 1
-      
+
+
       - name: Show LaTeX file
-	run: cat Jaime_Castro_CV.tex
+	run: |
+	  cat Jaime_Castro_CV.tex
   
       - name: Commit and Push Rendered PDF
         env:
