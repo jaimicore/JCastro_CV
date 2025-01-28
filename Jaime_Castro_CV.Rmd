@@ -9,17 +9,17 @@ bluesky: jaimicore
 github: jaimicore
 date: "`r format(Sys.time(), '%B %Y')`"
 profilepic: data/Jaime.jpg
-headcolor: 009ACD
-aboutme: "I am a computational biologist with +10 years of experience in research, sequence analysis, methods development, and data visualisation. I have worked in both the academic and private sector. Most of my research expertise is related to sequence analysis and omics integration. My experience in the private sector is mainly related to the development and establishment of reproducible bioinformatic workflows as part of a vaccine design program."
+headcolor: 0570b0
+aboutme: "I am a computational biologist with +10 years of experience in research, sequence analysis, methods development, and data visualisation. I have worked in both the academic and private sector. My main research expertise is related to sequence analysis and -omics integration. My experience in the private sector is related to the development and establishment of reproducible bioinformatic workflows as part of a vaccine design program."
 output: 
   vitae::awesomecv:
-#     keep_tex: true
-#     show_footer: true
-# includes:
-#   in_header: header.txt
-# always_allow_html: yes
-# editor_options:
-#   chunk_output_type: console
+    keep_tex: false
+    show_footer: true
+    includes:
+      in_header: header.txt
+always_allow_html: yes
+editor_options: 
+  chunk_output_type: console
 ---
 
 
@@ -33,6 +33,7 @@ library(here)
 library(readxl)
 library(glue)
 library(tidyr)
+library(kableExtra)
 ```
 
 
@@ -53,6 +54,7 @@ jobs <-
 
 # Research/Working Experience
 
+
 ```{r research_work}
 jobs %>% 
   dplyr::filter(Tag == "Work/Research") %>% 
@@ -64,6 +66,7 @@ jobs %>%
                    why   = Why)
 ```
 
+\hspace{1cm}
 
 # Education
 
@@ -78,6 +81,7 @@ jobs %>%
                    why   = Why)
 ```
 
+\hspace{1cm}
 
 # Computational skills
 
@@ -88,14 +92,34 @@ jobs %>%
                    what = What)
 ```
 
+\hspace{1cm}
 
 # Languages
 
-```{r Languages}
-jobs %>% 
-  dplyr::filter(Tag == "Languages") %>% 
-  detailed_entries(what = What,
-                   why  = Why)
+```{r Languages, results='markup'}
+# jobs %>% 
+#   dplyr::filter(Tag == "Languages") %>% 
+#   detailed_entries(what = What,
+#                    why  = Why)
+
+data.frame(
+  Skill = c("Reading", "Writing", "Listening","Speaking"),
+  Spanish = cell_spec(c(rep("Native", 4)), 'latex', color = '#005c7b'), 
+  English = cell_spec(c("B1","B1","B1","B1"), 'latex', color = '#009acd'), 
+  French = cell_spec(c("B1","B1","B1","B1"), 'latex', color = '#009acd'), 
+  Norwegian = cell_spec(c("A2","A2","A2","A2"), 'latex', color = '#4cb8dc')
+) |>
+  kable(booktabs = T, align = 'c', escape = F, format = "latex") |>
+  kable_styling(full_width = F, font_size = 9, latex_options = "HOLD_position") |> 
+  footnote(
+    footnote_as_chunk = T,
+    general_title = " ",
+    general = "\\\\tiny Common European Framework of Reference for Languages: A1/A2: Basic User. B1/B2: Independent User. C1/C2: Proficient User",
+    escape = F
+  ) |>
+  column_spec(column = 1:6, width = '2.4cm') #|> 
+
+
 ```
 
 
@@ -124,7 +148,7 @@ jobs %>%
 <!-- ``` -->
 
 
-
+\hspace{1cm}
 
 # Publications
 
@@ -187,11 +211,13 @@ See the complete list of publications (including preprints) and citations in my 
 
 23. Rogel MA, Bustos P, Santamaría RI, González V, Romero D, Miguel AC, Lozano L, **Castro-Mondragon JA**, Martínez-Romero J, Ormeño-Orrillo E, Martínez-Romero E. *Genomic basis of symbiovar mimosae in Rhizobium etli*. BMC Genomics (2014)
 
+\hspace{1cm}
 
 ## Preprints
 
 No preprints at this moment.
 
+\hspace{1cm}
 
 # Reviewed manuscripts
 
@@ -232,6 +258,7 @@ Reviewed manuscripts in the following journals: Bioinformatics, Genetics, Molecu
 <!-- 7. *Novel computational predictions of regulons based on the observed autoregulation of the network*. 5th IECA Conference 2011. Gene Regulatory Networks -->
 <!-- in the Enterobacteriaceae, 2011. -->
 
+\hspace{1cm}
 
 # Personalia
 
@@ -240,11 +267,11 @@ jobs %>%
   dplyr::filter(Tag == "Personalia") %>% 
   #arrange(desc(Start)) %>% 
   detailed_entries(what  = What,
-                   #when  = When,
                    with  = With)
 ```
 
 
+\pagebreak
 
 # References
 
