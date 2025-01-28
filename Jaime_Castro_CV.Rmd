@@ -19,7 +19,6 @@ output:
       in_header: header.txt
   pdf_document:
     latex_engine: xelatex
-    fontfamily: "DejaVu Sans"
 always_allow_html: yes
 editor_options: 
   chunk_output_type: console
