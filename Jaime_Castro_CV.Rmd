@@ -101,27 +101,26 @@ jobs %>%
 ```{r Languages, results='markup'}
 
 # Adapted from: https://github.com/loreabad6/R-CV/blob/master/CV.Rmd
-# jobs %>% 
-#   dplyr::filter(Tag == "Languages") %>% 
+# jobs %>%
+#   dplyr::filter(Tag == "Languages") %>%
 #   detailed_entries(what = What,
 #                    why  = Why)
 
 data.frame(
-  Skill = c("Reading", "Writing", "Listening","Speaking"),
-  Spanish = cell_spec(c(rep("Native", 4)), 'latex', color = '#005c7b'), 
-  English = cell_spec(c("B1","B1","B1","B1"), 'latex', color = '#009acd'), 
-  French = cell_spec(c("B1","B1","B1","B1"), 'latex', color = '#009acd'), 
-  Norwegian = cell_spec(c("A2","A2","A2","A2"), 'latex', color = '#4cb8dc')
-) |>
+  Spanish = cell_spec(c("Native"), 'latex', color = '#005c7b'),
+  English = cell_spec(c("Fluent"), 'latex', color = '#009acd'),
+  French = cell_spec(c("Fluent"), 'latex', color = '#009acd'),
+  Norwegian = cell_spec(c("Intermediate (A2)"), 'latex', color = '#4cb8dc')
+)  |> 
   kable(booktabs = T, align = 'c', escape = F, format = "latex") |>
-  kable_styling(full_width = F, font_size = 9, latex_options = "HOLD_position") |> 
+  kable_styling(full_width = F, font_size = 9, latex_options = "HOLD_position") |>
   footnote(
     footnote_as_chunk = T,
     general_title = " ",
-    general = "\\\\tiny Common European Framework of Reference for Languages: A1/A2: Basic User. B1/B2: Independent User. C1/C2: Proficient User",
+    #general = "\\\\tiny Common European Framework of Reference for Languages: A1/A2: Basic User. B1/B2: Independent User. C1/C2: Proficient User",
     escape = F
   ) |>
-  column_spec(column = 1:6, width = '2.4cm') #|> 
+  column_spec(column = 1:4, width = '3cm') #|>
 
 
 ```
