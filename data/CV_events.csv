@@ -1,5 +1,5 @@
 Start,End,What,With,Where,Tag,Why
-24/04/22,24/04/22,Bioinformatician (Scientist II),Nykode Therapeutics AS,"Oslo, Norway",Work/Research,"Design and analysis of RNA-seq experiments. Development, establishment, and maintenance of bioinformatic workflows (prediction of MHC-binding peptides, protease cleavage sites, RNA secondary structure). Train ML models to highlight protein features explaining experimental observations."
+24/04/22,24/04/22,Bioinformatician (Scientist II),Nykode Therapeutics AS,"Oslo, Norway",Work/Research,"Design and analysis of RNA-seq experiments to highlight transcriptomic differences in mouse cells tested with different vaccine candidates. Development, establishment, and maintenance of bioinformatic workflows (prediction of MHC-binding peptides, protease cleavage sites, RNA secondary structure). Train ML models to highlight protein features explaining experimental observations."
 01/10/17,24/04/22,Post-doctoral researcher,University of Oslo,"Oslo, Norway",Work/Research,"Multi-omics integration (WES, WGS, RNA-seq, sRNA-seq, CNAs) to associate mutations at cis-regulatory regions with dysregulation of miRNA networks. I co-lead two releases of the JASPAR database working on the clustering of motifs, data curation, and establishing a motif discovery pipeline. Supervisor: Anthony Matelier."
 01/08/09,01/07/13,Bachelor in genomic sciences,Universidad Nacional Autonoma de Mexico,"Cuernavaca, Mexico",Education,Detection of transcription factor binding motifs for uncharacterized transcritpion factors using sequence homology. Supervisors: PhD Julio Collado-Vides and PhD Alejandra Medina-Rivera. Graduated with honors. 
 01/09/13,01/07/14,Master in systems biology,Institute de biology de l'Ecole Normale Superieure,"Paris, France",Education,Development of a method to cluster transcription factor binding motifs. Supervisor: PhD Jacques van Helden. Graduated with honors.
@@ -17,16 +17,16 @@ Start,End,What,With,Where,Tag,Why
 22/07/19,22/07/19,Combining transcriptional and post-transcriptional regulation to predict mutations altering the gene regulatory program in cancer cells,ISMB/ECCB 2019,"Basel, Switzerland",Presentations,
 01/11/16,01/11/16,RSAT matrix-clustering: dynamic exploration and redundancy reduction of transcription factor binding motif collections.,1st Student Symposium on Computational Genomics,"Mainz,Germany",Presentations,
 ,,"Proficient. Use of ggplot, tidyverse, Rmarkdown, Rcpp, S4 objects, Plotly.",R,,Comp_skills,
-,,Proficient.,Perl,,Comp_skills,
-,,Proficient.,Git,,Comp_skills,
-,,Beginner,CI/CD (github actions),,Comp_skills,
-,,Proficient. Development of pipelines for analysis of high-throughput data,Snakemake,,Comp_skills,
+,,"Proficient. Use of regular expressions, CGI and object-oriented approaches.",Perl,,Comp_skills,
+,,"Proficient. Creating development branches, merging projects and reviewing code.",Git,,Comp_skills,
+,,Beginner. Test functionality of my own code.,CI/CD (github actions),,Comp_skills,
+,,Proficient. Development of pipelines for analysis of high-throughput data.,Snakemake,,Comp_skills,
 ,,"Intermediate. Use of pandas, polars, seaborn, plotly, numpy, scikit-learn, object-oriented classes.",Python,,Comp_skills,
-,,Intermediate,Docker,,Comp_skills,
-,,Intermediate,GNU make,,Comp_skills,
+,,Intermediate. Installation of software requiring multiple dependencies in the same container.,Docker,,Comp_skills,
+,,Intermediate. ,GNU make,,Comp_skills,
 ,,Intermediate,Bash,,Comp_skills,
 ,,Intermediate. Development of interactive hierarchical trees.,D3,,Comp_skills,
-,,Beginner,aws S3,,Comp_skills,
+,,Beginner. Basic manipulation of files in a bucket.,aws S3,,Comp_skills,
 ,,Beginner. Development of pipelines for analysis of high-throughput data,nextflow,,Comp_skills,
 ,,Intermediate. Development of interactive websites.,HTML / CSS,,,
 ,,"Experience with biological databases like TCGA, ICGC, roadmap epigenomics, ENCODE, Human Protein Atlas",Other,,Comp_skills,
