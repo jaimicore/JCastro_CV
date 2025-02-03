@@ -10,7 +10,7 @@ github: jaimicore
 date: "`r format(Sys.time(), '%B %Y')`"
 profilepic: data/Jaime.jpg
 headcolor: 0570b0
-aboutme: "I am a computational biologist with +10 years of experience in research, sequence analysis, methods development, and data visualisation. I have worked in both the academic and private sector. My main research expertise is related to sequence analysis and -omics integration. My experience in the private sector is related to the development and establishment of reproducible bioinformatic workflows as part of a vaccine design program."
+aboutme: "I am a computational biologist with +10 years of experience in research, sequence analysis, methods development, and data visualisation. I have worked in both the academic and private sector. My main expertise is the development of algorithms to analyze biological data and apply these methods in a wider range of biomedical fields such as vaccine design or gene expression."
 output: 
   vitae::awesomecv:
     keep_tex: false
