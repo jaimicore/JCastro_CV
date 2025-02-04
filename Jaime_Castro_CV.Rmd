@@ -36,6 +36,8 @@ library(readxl)
 library(glue)
 library(tidyr)
 library(kableExtra)
+library(purrr)
+library(stringr)
 ```
 
 
@@ -58,9 +60,11 @@ jobs <-
 
 
 ```{r research_work}
-jobs %>% 
-  dplyr::filter(Tag == "Work/Research") %>% 
-  arrange(desc(Start)) %>% 
+
+
+jobs %>%
+  dplyr::filter(Tag == "Work/Research") %>%
+  arrange(desc(Start)) %>%
   detailed_entries(what  = What,
                    when  = When,
                    with  = With,
