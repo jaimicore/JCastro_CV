@@ -21,7 +21,7 @@ Start,End,What,With,Where,Tag,Why
 ,,"Proficient. Creating development branches, merging projects and reviewing code.",Git,,Comp_skills,
 ,,Beginner. Test functionality of my own code.,CI/CD (github actions),,Comp_skills,
 ,,Proficient. Development of pipelines for analysis of high-throughput data.,Snakemake,,Comp_skills,
-,,"Intermediate. Use of pandas, polars, seaborn, plotly, numpy, scikit-learn, object-oriented classes.",Python,,Comp_skills,
+,,"Proficient. Use of pandas, polars, seaborn, plotly, numpy, scikit-learn, object-oriented classes.",Python,,Comp_skills,
 ,,Intermediate. Installation of software requiring multiple dependencies in the same container.,Docker,,Comp_skills,
 ,,Intermediate. ,GNU make,,Comp_skills,
 ,,Intermediate,Bash,,Comp_skills,
