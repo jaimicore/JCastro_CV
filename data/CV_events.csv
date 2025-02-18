@@ -16,20 +16,20 @@ Start,End,What,With,Where,Tag,Why
 01/04/16,01/04/17,Analysis of Cis-Regulatory Sequences,Aix-Marseille Universite,"Marseille, France",Teaching,Teaching assistant. Master level
 22/07/19,22/07/19,Combining transcriptional and post-transcriptional regulation to predict mutations altering the gene regulatory program in cancer cells,ISMB/ECCB 2019,"Basel, Switzerland",Presentations,
 01/11/16,01/11/16,RSAT matrix-clustering: dynamic exploration and redundancy reduction of transcription factor binding motif collections.,1st Student Symposium on Computational Genomics,"Mainz,Germany",Presentations,
-,,"Proficient. Use of ggplot, tidyverse, Rmarkdown, Rcpp, S4 objects, Plotly.",R,,Comp_skills,
-,,"Proficient. Use of regular expressions, CGI and object-oriented approaches.",Perl,,Comp_skills,
-,,"Proficient. Creating development branches, merging projects and reviewing code.",Git,,Comp_skills,
-,,Beginner. Test functionality of my own code.,CI/CD (github actions),,Comp_skills,
-,,Proficient. Development of pipelines for analysis of high-throughput data.,Snakemake,,Comp_skills,
-,,"Proficient. Use of pandas, polars, seaborn, plotly, numpy, scikit-learn, object-oriented classes.",Python,,Comp_skills,
-,,Intermediate. Installation of software requiring multiple dependencies in the same container.,Docker,,Comp_skills,
-,,Intermediate. ,GNU make,,Comp_skills,
-,,Intermediate,Bash,,Comp_skills,
-,,Intermediate. Development of interactive hierarchical trees.,D3,,Comp_skills,
-,,Beginner. Basic manipulation of files in a bucket.,aws S3,,Comp_skills,
-,,Beginner. Development of pipelines for analysis of high-throughput data,nextflow,,Comp_skills,
-,,Intermediate. Development of interactive websites.,HTML / CSS,,,
-,,"Experience with biological databases like TCGA, ICGC, roadmap epigenomics, ENCODE, Human Protein Atlas",Other,,Comp_skills,
+,,Python,Proficient,,Comp_skills,"Programming language;pandas, polars, seaborn, plotly, NumPy, scikit-learn, object-oriented programming."
+,,R,Proficient,,Comp_skills,"Programming language;ggplot2, tidyverse, RMarkdown, Rcpp, S4 objects, plotly."
+,,Perl,Proficient,,Comp_skills,"Programming language;Regular expressions, CGI scripting, object-oriented design."
+,,Bash,Intermediate,,Comp_skills,"Programming language;Scripting for automation, file manipulation, and workflow execution."
+,,HTML / CSS,Intermediate,,Comp_skills,Programming language;Development of interactive websites.
+,,D3,Intermediate,,Comp_skills,Programming language;Development of interactive hierarchical trees.
+,,Snakemake,Proficient,,Comp_skills,Pipeline Development;Development of pipelines for analysis of high-throughput data.
+,,GNU make,Intermediate,,Comp_skills,Pipeline Development;Automating bioinformatics workflows.
+,,nextflow,Beginner,,Comp_skills,Pipeline Development;Development of pipelines for analysis of high-throughput data.
+,,Docker,Intermediate,,Comp_skills,Containerization;Containerized bioinformatics applications.
+,,Git,Proficient,,Comp_skills,"Version Control;Development branching, project merging, code review."
+,,aws S3,Beginner,,Comp_skills,Cloud;Basic manipulation of files in a bucket.
+,,CI/CD,Beginner,,Comp_skills,Automation;Test functionality of my own code (GitHub actions).
+,,Biology-related Databases,Proficient,,Databases,"Databases;TCGA, ICGC, Roadmap Epigenomics, ENCODE, Human Protein Atlas, JASPAR, HOCOMOCO, CIS-BP, ENSEMBL, UCSC"
 ,,13/02/90,Date of birth,,Personalia,
 ,,Mexican,Citizenship,,Personalia,
 ,,"PhD Supervisor, Collaborator",Professor Jacques van Helden,"Aix-Marseille Universite, Marseille, France",References,Jacques.van-Helden@france-bioinformatique.fr (https://orcid.org/0000-0002-8799-8584)
