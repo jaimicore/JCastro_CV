@@ -74,6 +74,49 @@ jobs %>%
 
 \hspace{1cm}
 
+# Computational skills
+
+\renewcommand{\arraystretch}{1.5}
+```{r Comp_skills}
+
+comp.skills <- jobs %>% 
+                dplyr::filter(Tag == "Comp_skills") %>% 
+                # detailed_entries(with = With,
+                #                  what = What) %>% 
+                dplyr::select(What, With, Why) %>% 
+                separate(Why, sep = ";", into = c("Category", "Description")) %>% 
+                rename(Level = With) %>% 
+                group_by(Category) %>%
+                mutate(Category = if_else(row_number() == 1, Category, "")) %>%
+                ungroup()
+
+# comp.skills <- comp.skills[1:13,]
+
+# Define color mapping for levels
+color_mapping <- c("Proficient" = "#005c7b", 
+                   "Intermediate" = "#009acd", 
+                   "Beginner" = "#4cb8dc")  # Changed 3rd color for uniqueness
+
+# Process the table
+formatted_tbl <- comp.skills %>%
+  mutate(Color = color_mapping[Level],  # Assign colors dynamically
+         Level = cell_spec(Level, "latex", color = Color)) %>%
+  select(-Color)  #
+
+# Create the table
+
+formatted_tbl %>%
+  kable(booktabs = TRUE, align = 'l', escape = FALSE, format = "latex", linesep = "") %>%
+  kable_styling(full_width = T, font_size = 8.25, latex_options = c("HOLD_position", "scale_down"), position = "center") %>%
+  column_spec(column = 1:4, width = c('1.5cm', '1.5cm', '3cm', '10cm')) %>% 
+  row_spec(0, bold = TRUE, background = "#FFFFFF", align = "left")
+
+```
+
+\hspace{1cm}
+\clearpage
+
+\hspace{1cm}
 # Education
 
 ```{r education}
@@ -87,16 +130,6 @@ jobs %>%
                    why   = Why)
 ```
 
-\hspace{1cm}
-
-# Computational skills
-
-```{r Comp_skills}
-jobs %>% 
-  dplyr::filter(Tag == "Comp_skills") %>% 
-  detailed_entries(with = With,
-                   what = What)
-```
 
 \hspace{1cm}
 
@@ -114,17 +147,10 @@ data.frame(
   Spanish = cell_spec(c("Native"), 'latex', color = '#005c7b'),
   English = cell_spec(c("Fluent"), 'latex', color = '#009acd'),
   French = cell_spec(c("Fluent"), 'latex', color = '#009acd'),
-  Norwegian = cell_spec(c("Intermediate (A2)"), 'latex', color = '#4cb8dc')
-)  |> 
-  kable(booktabs = T, align = 'c', escape = F, format = "latex") |>
-  kable_styling(full_width = F, font_size = 9, latex_options = "HOLD_position") |>
-  footnote(
-    footnote_as_chunk = T,
-    general_title = " ",
-    #general = "\\\\tiny Common European Framework of Reference for Languages: A1/A2: Basic User. B1/B2: Independent User. C1/C2: Proficient User",
-    escape = F
-  ) |>
-  column_spec(column = 1:4, width = '3cm') #|>
+  Norwegian = cell_spec(c("Intermediate (A2)"), 'latex', color = '#4cb8dc')) |> 
+  kable(booktabs = TRUE, align = 'c', escape = FALSE, format = "latex", linesep = "") |>
+  kable_styling(full_width = T, font_size = 10, latex_options = c("HOLD_position", "scale_down")) |>
+  column_spec(column = 1:4, width = '3cm')
 
 
 ```
@@ -279,7 +305,7 @@ jobs %>%
 
 
 \pagebreak
-
+\hspace{1cm}
 # References
 
 ```{r References}
