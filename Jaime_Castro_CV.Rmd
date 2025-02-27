@@ -38,6 +38,10 @@ library(tidyr)
 library(kableExtra)
 library(purrr)
 library(stringr)
+
+show.publications <- FALSE
+publication.short <- !show.publications
+
 ```
 
 
@@ -114,6 +118,10 @@ formatted_tbl %>%
 ```
 
 \hspace{1cm}
+
+**Experience with the following approaches**: clustering, dimensionality reduction, data wrangling, multivariate analysis, statistical tests, Markov chains, random forest, linear regression, logistic regression, neural networks, ranking, feature selection, data curation, ROC and Precision-Recall curves, benchmarking, regular expressions, pattern discovery, pattern matching.
+
+\hspace{1cm}
 \clearpage
 
 \hspace{1cm}
@@ -183,12 +191,19 @@ data.frame(
 
 \hspace{1cm}
 
+```{asis, echo=show.publications, eval=show.publications}
+
 # Publications
+
+\hspace{1cm}
 
 See the complete list of publications (including preprints) and citations in my google scholar profile: [*pcevKk0AAAA*](https://scholar.google.fr/citations?user=pcevKk0AAAAJ&hl=en)
 
+\hspace{1cm}
+
 *ORCID* profile: [0000-0003-4069-357X](https://orcid.org/0000-0003-4069-357X)
 
+\hspace{1cm}
 
 \* = equal contributions (first-author)
 
@@ -196,6 +211,7 @@ See the complete list of publications (including preprints) and citations in my 
 
 \# = co-corresponding authors
 
+\hspace{1cm}
 ## Peer-reviewed
 
 1. Taboada-Castro H, Hernandez-Alvarez AJ, **Castro-Mondragon JA**, and Encarnacion-Guervara S. *RhizoBindingSites v2.0 Is a Bioinformatic Database of DNA Motifs Potentially Involved in Transcriptional Regulation Deduced From Their Genomic Sites*. Bioinformatics and Biology Insights. (2024)
@@ -249,6 +265,21 @@ See the complete list of publications (including preprints) and citations in my 
 ## Preprints
 
 No preprints at this moment.
+```
+
+
+```{asis, echo=publication.short, eval=publication.short}
+
+# Publications
+
+23 Peer-reviewed publications (6 as first author).
+
+See the complete list of publications (including preprints) and citations in my google scholar profile: [*pcevKk0AAAA*](https://scholar.google.fr/citations?user=pcevKk0AAAAJ&hl=en)
+
+*ORCID* profile: [0000-0003-4069-357X](https://orcid.org/0000-0003-4069-357X)
+
+```
+
 
 \hspace{1cm}
 
@@ -256,7 +287,7 @@ No preprints at this moment.
 
 *Web of Science (prev. Publons)* profile: [1499198](https://www.webofscience.com/wos/author/record/P-6297-2019)
 
-Reviewed manuscripts in the following journals: Bioinformatics, Genetics, Molecular Plant, Nucleic Acids Research, Genome biology, Genome Biology and Evolution, Frontiers in Genetics, eLife.
++30 reviewed manuscripts in the following journals: Bioinformatics, Genetics, Molecular Plant, Nucleic Acids Research, Genome biology, Genome Biology and Evolution, Frontiers in Genetics, eLife.
 
 
 <!-- # Presentations -->
