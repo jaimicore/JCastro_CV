@@ -1,38 +1,39 @@
-Start,End,What,With,Where,Tag,Why
-24/04/22,24/04/22,Bioinformatician (Scientist II),Nykode Therapeutics AS,"Oslo, Norway",Work/Research,"Design and analysis of RNA-seq experiments to highlight transcriptomic differences in mouse cells tested with different vaccine candidates. Development, establishment, and maintenance of bioinformatic workflows (prediction of MHC-binding peptides, protease cleavage sites, RNA secondary structure). Train ML models to highlight protein features explaining experimental observations."
-01/10/17,24/04/22,Post-doctoral researcher,University of Oslo,"Oslo, Norway",Work/Research,"Co-lead the JASPAR database team (~20 people) in the 2020 and 2022 releases (data QC, manual curation of results, development of motif analysis pipeline and added motif clusters to the website). Development of a multi-omics (WES, WGS, RNA-seq, sRNA-seq, CNAs) integration method to calculate the likely association of single-nucleotide variants with changes in gene expression in gene regulatory networks. +30 verified peer-reviews for scietific journals. Mentoring of PhD and master students. Supervisor: Anthony Matelier."
-01/08/09,01/07/13,Bachelor in genomic sciences,Universidad Nacional Autonoma de Mexico,"Cuernavaca, Mexico",Education,Detection of transcription factor binding motifs for uncharacterized transcritpion factors using sequence homology. Supervisors: PhD Julio Collado-Vides and PhD Alejandra Medina-Rivera. Graduated with honors. 
-01/09/13,01/07/14,Master in systems biology,Institute de biology de l'Ecole Normale Superieure,"Paris, France",Education,Development of a method to cluster transcription factor binding motifs. Supervisor: PhD Jacques van Helden. Graduated with honors.
-01/10/14,01/07/17,PhD in bioinformatics,Aix-Marseille Universite,"Marseille, France",Education,Development of methods to work with large collection of transcription factor binding motifs: clustering of motifs and enrichment of binding sites. Supervisor: PhD Jacques van Helden. 6 publication derived from this thesis. Graduated with honors.
-,,Spanish,,,Languages,Native speaker
-,,English,,,Languages,Fluent
-,,French,,,Languages,Fluent
-,,Norwegian,,,Languages,Intermediate (Level A2)
-21/07/19,25/07/19,Travel fellowship to present a talk at ISMB/ECCB 2019,International Society of Computational Biology,,Honors_prices,
-01/10/14,01/07/17,PhD scholarship from Ecole Doctorale Sciences de la Vie et de la Sancte,,,Honors_prices,
-01/09/13,01/07/14,CONACYT (Consejo NAcional de ciencia y Teconologia) scholarship for Master studies,,,Honors_prices,
-01/02/13,01/06/13,Programming with R,Bachelor in genomic sciences program,"Cuernavaca, Mexico",Teaching,Teaching assistant. Bachelor level
-01/02/13,01/06/13,"Applications of the genomics, seminars.",Bachelor in genomic sciences program,"Cuernavaca, Mexico",Teaching,Teaching assistant. Bachelor level
-01/04/16,01/04/17,Analysis of Cis-Regulatory Sequences,Aix-Marseille Universite,"Marseille, France",Teaching,Teaching assistant. Master level
-22/07/19,22/07/19,Combining transcriptional and post-transcriptional regulation to predict mutations altering the gene regulatory program in cancer cells,ISMB/ECCB 2019,"Basel, Switzerland",Presentations,
-01/11/16,01/11/16,RSAT matrix-clustering: dynamic exploration and redundancy reduction of transcription factor binding motif collections.,1st Student Symposium on Computational Genomics,"Mainz,Germany",Presentations,
-,,Python,Proficient,,Comp_skills,"Programming language;pandas, polars, seaborn, plotly, NumPy, scikit-learn, object-oriented programming."
-,,R,Proficient,,Comp_skills,"Programming language;ggplot2, tidyverse, RMarkdown, Rcpp, S4 objects, plotly."
-,,Perl,Proficient,,Comp_skills,"Programming language;Regular expressions, CGI scripting, object-oriented design."
-,,Bash,Intermediate,,Comp_skills,"Programming language;Scripting for automation, file manipulation, and workflow execution."
-,,HTML / CSS,Intermediate,,Comp_skills,Programming language;Development of interactive websites.
-,,D3,Intermediate,,Comp_skills,Programming language;Development of interactive hierarchical trees.
-,,Snakemake,Proficient,,Comp_skills,Pipeline Development;Development of pipelines for analysis of high-throughput data.
-,,GNU make,Intermediate,,Comp_skills,Pipeline Development;Automating bioinformatics workflows.
-,,nextflow,Beginner,,Comp_skills,Pipeline Development;Development of pipelines for analysis of high-throughput data.
-,,Docker,Intermediate,,Comp_skills,Containerization;Containerized bioinformatics applications.
-,,Git,Proficient,,Comp_skills,"Version Control;Development branching, project merging, code review."
-,,aws S3,Beginner,,Comp_skills,Cloud;Basic manipulation of files in a bucket.
-,,CI/CD,Beginner,,Comp_skills,Automation;Test functionality of my own code (GitHub actions).
-,,Biology-related Databases,Proficient,,Databases,"Databases;TCGA, ICGC, Roadmap Epigenomics, ENCODE, Human Protein Atlas, JASPAR, HOCOMOCO, CIS-BP, ENSEMBL, UCSC"
-,,13/02/90,Date of birth,,Personalia,
-,,Mexican,Citizenship,,Personalia,
-,,"PhD Supervisor, Collaborator",Professor Jacques van Helden,"Aix-Marseille Universite, Marseille, France",References,Jacques.van-Helden@france-bioinformatique.fr (https://orcid.org/0000-0002-8799-8584)
-,,"Bachelor Thesis Supervisor, Collaborator",PhD Alejandra Medina-Rivera,"Laboratorio Internacional de Investigacion sobre el Genoma Humano, Queretaro, Mexico",References,amedina@liigh.unam.mx (https://liigh.unam.mx/amedina/)
-,,"Postdoc Supervisor, Collaborator",PhD Anthony Mathelier,"Norway Centre of Molecular Medicine, Oslo, Norway",References,anthony.mathelier@ncmm.uio.no (https://mathelierlab.com/)
-,,Head of In Silico and Artificial Intelligence Department,PhD Andreas Midbøe Hoff,"Nykode Therapeutics AS, Oslo, Norway",References,amhoff@nykode.com (linkedin.com/in/andreas-midbøe-hoff-853366b0)
+Start,End,What,With,Where,Tag,Why,
+24/04/22,24/04/22,Bioinformatician (Scientist II),Nykode Therapeutics AS,"Oslo, Norway",Work/Research,"Design and analysis of RNA-seq experiments to highlight transcriptomic differences in mouse cells tested with different vaccine candidates. Development, establishment, and maintenance of bioinformatic workflows (prediction of MHC-binding peptides, protease cleavage sites, RNA secondary structure). Train ML models to highlight protein features explaining experimental observations.",
+01/10/17,24/04/22,Post-doctoral researcher,University of Oslo,"Oslo, Norway",Work/Research,"Co-lead the JASPAR database team (~20 people) in the 2020 and 2022 releases (data QC, manual curation of results, development of motif analysis pipeline and added motif clusters to the website). Development of a multi-omics (WES, WGS, RNA-seq, sRNA-seq, CNAs) integration method to calculate the likely association of single-nucleotide variants with changes in gene expression in gene regulatory networks. +30 verified peer-reviews for scietific journals. Mentoring of PhD and master students. Supervisor: Anthony Matelier.",
+01/08/09,01/07/13,Bachelor in genomic sciences,Universidad Nacional Autonoma de Mexico,"Cuernavaca, Mexico",Education,Detection of transcription factor binding motifs for uncharacterized transcritpion factors using sequence homology. Supervisors: PhD Julio Collado-Vides and PhD Alejandra Medina-Rivera. Graduated with honors. ,
+01/09/13,01/07/14,Master in systems biology,Institute de biology de l'Ecole Normale Superieure,"Paris, France",Education,Development of a method to cluster transcription factor binding motifs. Supervisor: PhD Jacques van Helden. Graduated with honors.,
+01/10/14,01/07/17,PhD in bioinformatics,Aix-Marseille Universite,"Marseille, France",Education,Development of methods to work with large collection of transcription factor binding motifs: clustering of motifs and enrichment of binding sites. Supervisor: PhD Jacques van Helden. 6 publication derived from this thesis. Graduated with honors.,
+,,Spanish,,,Languages,Native speaker,
+,,English,,,Languages,Fluent,
+,,French,,,Languages,Fluent,
+,,Norwegian,,,Languages,Intermediate (Level A2),
+21/07/19,25/07/19,Travel fellowship to present a talk at ISMB/ECCB 2019,International Society of Computational Biology,,Honors_prices,,
+01/10/14,01/07/17,PhD scholarship from Ecole Doctorale Sciences de la Vie et de la Sancte,,,Honors_prices,,
+01/09/13,01/07/14,CONACYT (Consejo NAcional de ciencia y Teconologia) scholarship for Master studies,,,Honors_prices,,
+01/02/13,01/06/13,Programming with R,Bachelor in genomic sciences program,"Cuernavaca, Mexico",Teaching,Teaching assistant. Bachelor level,
+01/02/13,01/06/13,"Applications of the genomics, seminars.",Bachelor in genomic sciences program,"Cuernavaca, Mexico",Teaching,Teaching assistant. Bachelor level,
+01/04/16,01/04/17,Analysis of Cis-Regulatory Sequences,Aix-Marseille Universite,"Marseille, France",Teaching,Teaching assistant. Master level,
+22/07/19,22/07/19,Combining transcriptional and post-transcriptional regulation to predict mutations altering the gene regulatory program in cancer cells,ISMB/ECCB 2019,"Basel, Switzerland",Presentations,,
+01/11/16,01/11/16,RSAT matrix-clustering: dynamic exploration and redundancy reduction of transcription factor binding motif collections.,1st Student Symposium on Computational Genomics,"Mainz,Germany",Presentations,,
+,,Python,Proficient,,Comp_skills,"Programming language;pandas, polars, seaborn, plotly, NumPy, scikit-learn, object-oriented programming.",
+,,R,Proficient,,Comp_skills,"Programming language;ggplot2, tidyverse, RMarkdown, Rcpp, S4 objects, plotly.",
+,,Perl,Proficient,,Comp_skills,"Programming language;Regular expressions, CGI scripting, object-oriented design.",
+,,Bash,Intermediate,,Comp_skills,"Programming language;Scripting for automation, file manipulation, and workflow execution.",
+,,HTML / CSS,Intermediate,,Comp_skills,Programming language;Development of interactive websites.,Development of interactive websites.
+,,D3,Intermediate,,Comp_skills,Programming language;Development of interactive hierarchical trees.,Development of interactive hierarchical trees.
+,,SQL,Beginner,,Comp_skills,"Databases; Queries, subqueries, join operations.",
+,,Snakemake,Proficient,,Comp_skills,Pipeline Development;Development of pipelines for analysis of NGS data.,Development of pipelines for analysis of high-throughput data.
+,,GNU make,Intermediate,,Comp_skills,Pipeline Development;Automating bioinformatics workflows.,Automating bioinformatics workflows.
+,,nextflow,Beginner,,Comp_skills,Pipeline Development;Development of pipelines for analysis of NGS data.,Development of pipelines for analysis of high-throughput data.
+,,Docker,Intermediate,,Comp_skills,Containerization;Containerized bioinformatics applications.,Containerized bioinformatics applications.
+,,Git,Proficient,,Comp_skills,"Version Control;Development branching, project merging, code review.",
+,,aws S3,Beginner,,Comp_skills,Cloud;Basic manipulation of files in a bucket.,Basic manipulation of files in a bucket.
+,,CI/CD,Beginner,,Comp_skills,Automation;Test functionality of repositories (GitHub actions).,Test functionality of my own code (GitHub actions).
+,,Biology-related Databases,Proficient,,Databases,"Databases;TCGA, ICGC, Roadmap Epigenomics, ENCODE, Human Protein Atlas, JASPAR, HOCOMOCO, CIS-BP, ENSEMBL, UCSC",
+,,13/02/90,Date of birth,,Personalia,,
+,,Mexican,Citizenship,,Personalia,,
+,,"PhD Supervisor, Collaborator",Professor Jacques van Helden,"Aix-Marseille Universite, Marseille, France",References,Jacques.van-Helden@france-bioinformatique.fr (https://orcid.org/0000-0002-8799-8584),
+,,"Bachelor Thesis Supervisor, Collaborator",PhD Alejandra Medina-Rivera,"Laboratorio Internacional de Investigacion sobre el Genoma Humano, Queretaro, Mexico",References,amedina@liigh.unam.mx (https://liigh.unam.mx/amedina/),
+,,"Postdoc Supervisor, Collaborator",PhD Anthony Mathelier,"Norway Centre of Molecular Medicine, Oslo, Norway",References,anthony.mathelier@ncmm.uio.no (https://mathelierlab.com/),
+,,Head of In Silico and Artificial Intelligence Department,PhD Andreas Midbøe Hoff,"Nykode Therapeutics AS, Oslo, Norway",References,amhoff@nykode.com (linkedin.com/in/andreas-midbøe-hoff-853366b0),
