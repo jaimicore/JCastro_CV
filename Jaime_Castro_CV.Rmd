@@ -1,6 +1,6 @@
 ---
 name: Jaime A Castro-Mondragon
-position: Bioinformatician (Scientist level II)
+position: Bioinformatician
 address: Oslo, Norway
 www: jaimicore.github.io
 email: j.a.castro.mondragon@gmail.com
