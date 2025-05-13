@@ -10,7 +10,7 @@ github: jaimicore
 date: "`r format(Sys.time(), '%B %Y')`"
 profilepic: data/Jaime.jpg
 headcolor: 0570b0
-aboutme: "I am a computational biologist with +10 years of experience in research, sequence analysis, methods development, and data visualisation. I have worked in both the academic and private sector. My main expertise is the development of algorithms to analyze biological data and apply these methods in a wider range of biomedical fields such as vaccine design or gene expression."
+aboutme: "I am a computational biologist with 11 years of experience in research, sequence analysis, methods development, and data visualisation. I have worked in both the academic and private sector. My main expertise is the development of algorithms to analyze multivariate data and apply these methods in a wider range of biomedical fields such as vaccine design or gene expression."
 output: 
   vitae::awesomecv:
     keep_tex: false
@@ -22,6 +22,13 @@ output:
 always_allow_html: yes
 editor_options: 
   chunk_output_type: console
+
+
+header-includes:
+    - \usepackage{xcolor}
+    - \definecolor{mycolor}{RGB}{255, 87, 51}  # Custom orange color
+    - \usepackage{hyperref}
+    - \hypersetup{colorlinks=true, linkcolor=mycolor, urlcolor=mycolor}
 ---
 
 
@@ -39,7 +46,7 @@ library(kableExtra)
 library(purrr)
 library(stringr)
 
-show.publications <- FALSE
+show.publications <- TRUE
 publication.short <- !show.publications
 
 ```
@@ -59,28 +66,38 @@ jobs <-
   ))
 ```
 
+# Working Experience
 
-# Research/Working Experience
-
-
+\renewcommand{\arraystretch}{0.85}
 ```{r research_work}
 
 
 jobs %>%
   dplyr::filter(Tag == "Work/Research") %>%
   arrange(desc(Start)) %>%
-  detailed_entries(what  = What,
-                   when  = When,
-                   with  = With,
-                   where = Where,
-                   why   = Why)
+  detailed_entries(
+    what  = What,
+    when  = When,
+    with  = With,
+    where = Where,
+    why   = map(Why, ~ str_split(.x, "\\.\\s*")[[1]] %>% 
+                 discard(~ .x == "") %>%
+                 str_replace_all("JASPAR database", "\\\\href{https://jaspar.uio.no/}{JASPAR database}") %>% 
+                 str_replace_all("added motif clusters to the website", "\\\\href{https://jaspar.uio.no/matrix-clusters/nematodes/}{added motif clusters to the website}") %>% 
+                 str_replace_all("integration method", "\\\\href{https://bitbucket.org/CBGR/dysmir_pipeline/}{integration method}") %>% 
+                 str_replace_all("Anthony Matelier", "\\\\href{https://mathelierlab.com/}{Anthony Matelier}") %>% 
+                 str_replace_all("motif analysis pipeline", "\\\\href{https://bitbucket.org/CBGR/jaspar_curation_pipeline}{motif analysis pipeline}") %>% 
+                 paste0(., ".")),
+    .protect = FALSE
+  )
+
 ```
 
-\hspace{1cm}
+<!-- \hspace{0.75cm} -->
 
-# Computational skills
+# Toolkit
 
-\renewcommand{\arraystretch}{1.5}
+\renewcommand{\arraystretch}{1.15}
 ```{r Comp_skills}
 
 comp.skills <- jobs %>% 
@@ -89,6 +106,7 @@ comp.skills <- jobs %>%
                 #                  what = What) %>% 
                 dplyr::select(What, With, Why) %>% 
                 separate(Why, sep = ";", into = c("Category", "Description")) %>% 
+                dplyr::select(!Description) %>% 
                 rename(Level = With) %>% 
                 group_by(Category) %>%
                 mutate(Category = if_else(row_number() == 1, Category, "")) %>%
@@ -97,9 +115,9 @@ comp.skills <- jobs %>%
 # comp.skills <- comp.skills[1:13,]
 
 # Define color mapping for levels
-color_mapping <- c("Proficient" = "#005c7b", 
-                   "Intermediate" = "#009acd", 
-                   "Beginner" = "#4cb8dc")  # Changed 3rd color for uniqueness
+color_mapping <- c("Proficient" = "#08306b", 
+                   "Intermediate" = "#2171b5", 
+                   "Beginner" = "#6baed6")  # Changed 3rd color for uniqueness
 
 # Process the table
 formatted_tbl <- comp.skills %>%
@@ -110,21 +128,25 @@ formatted_tbl <- comp.skills %>%
 # Create the table
 
 formatted_tbl %>%
-  kable(booktabs = TRUE, align = 'l', escape = FALSE, format = "latex", linesep = "") %>%
-  kable_styling(full_width = T, font_size = 8.25, latex_options = c("HOLD_position", "scale_down"), position = "center") %>%
-  column_spec(column = 1:4, width = c('1.5cm', '1.5cm', '3cm', '10cm')) %>% 
+  kable(booktabs = T, align = 'l', escape = F, format = "latex", linesep = "") %>%
+  kable_styling(full_width = F, font_size = 9, latex_options = c("HOLD_position", "scale_down"), position = "float_left") %>%
+  column_spec(column = 1:3, width = c('1.5cm', '1.5cm', '3.5cm')) %>%
   row_spec(0, bold = TRUE, background = "#FFFFFF", align = "left")
+
+
 
 ```
 
-\hspace{1cm}
 
-**Experience with the following approaches**: clustering, dimensionality reduction, data wrangling, multivariate analysis, statistical tests, Markov chains, random forest, linear regression, logistic regression, neural networks, ranking, feature selection, data curation, ROC and Precision-Recall curves, benchmarking, regular expressions, pattern discovery, pattern matching.
+\hspace{0.5cm}
+\footnotesize \textbf{Technical Skills}: clustering, dimensionality reduction, exploratory data analysis (EDA), data wrangling, multivariate analysis, statistical tests, Markov chains, ML (Random Forest, Linear Regression, Logistic Regression), Deep Learning (neural networks), Data Curation, ROC and Precision-Recall curves, pattern discovery, pattern matching.
 
-\hspace{1cm}
+\hspace{0.5cm}
+\footnotesize \textbf{Tools}: jupyter notebooks, Rstudio, emacs, VS code, google docs, Linux (Ubuntu).
+
 \clearpage
+\hspace{0.5cm}
 
-\hspace{1cm}
 # Education
 
 ```{r education}
