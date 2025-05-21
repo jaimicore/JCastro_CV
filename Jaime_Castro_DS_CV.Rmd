@@ -3,7 +3,7 @@ name: Jaime A Castro-Mondragon
 position: Bioinformatician
 address: Oslo, Norway
 www: jaimicore.github.io
-email: j.a.castro.mondragon@gmail.com
+email: jamondra@uio.no
 linkedin: jaime-castro-mondragon
 bluesky: jaimicore
 github: jaimicore
@@ -22,8 +22,6 @@ output:
 always_allow_html: yes
 editor_options: 
   chunk_output_type: console
-
-
 header-includes:
     - \usepackage{xcolor}
     - \definecolor{mycolor}{RGB}{255, 87, 51}  # Custom orange color
