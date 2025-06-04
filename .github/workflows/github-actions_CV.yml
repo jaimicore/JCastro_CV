@@ -65,6 +65,5 @@ jobs:
           git clone https://x-access-token:${{ secrets.PERSONAL_WEBSITE_PAT }}@github.com/jaimicore/jaimicore.github.io.git
           cp Jaime_Castro_CV.pdf jaimicore.github.io/Doc/Jaime_Castro_CV.pdf
           cd jaimicore.github.io
-          git add Doc/Jaime_Castro_CV.pdf
-          git commit -m "Update CV PDF from CV repo"
+          git commit -m "Update CV PDF from CV repo" Doc/Jaime_Castro_CV.pdf
           git push origin main  # or your website branch
