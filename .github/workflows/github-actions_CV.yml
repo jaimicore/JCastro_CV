@@ -58,4 +58,13 @@ jobs:
           git push origin HEAD
           
 
-
+      - name: Export CV to personal website
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git clone https://x-access-token:${{ secrets.PERSONAL_WEBSITE_PAT }}@github.com/jaimicore/jaimicore.github.io.git
+          cp Jaime_Castro_CV.pdf jaimicore.github.io/Doc/Jaime_Castro_CV.pdf
+          cd jaimicore.github.io
+          git add Doc/Jaime_Castro_CV.pdf
+          git commit -m "Update CV PDF from CV repo"
+          git push origin main  # or your website branch
