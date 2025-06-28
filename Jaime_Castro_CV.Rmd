@@ -95,7 +95,7 @@ jobs %>%
 
 # Toolkit
 
-\renewcommand{\arraystretch}{1.15}
+\renewcommand{\arraystretch}{0.95}
 ```{r Comp_skills}
 
 comp.skills <- jobs %>% 
@@ -128,8 +128,8 @@ formatted_tbl <- comp.skills %>%
 formatted_tbl %>%
   kable(booktabs = T, align = 'l', escape = F, format = "latex", linesep = "") %>%
   kable_styling(full_width = F, font_size = 9, latex_options = c("HOLD_position", "scale_down"), position = "float_left") %>%
-  column_spec(column = 1:3, width = c('1.5cm', '1.5cm', '3.5cm')) %>%
-  row_spec(0, bold = TRUE, background = "#FFFFFF", align = "left")
+  column_spec(column = 1:3, width = c('1.75cm', '1.75cm', '3.25cm'), background = c("#FFFFFF", "#deebf7")) %>%
+  row_spec(0, bold = TRUE, background = c("#FFFFFF"), align = "left")
 
 
 
