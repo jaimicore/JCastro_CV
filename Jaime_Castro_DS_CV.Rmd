@@ -10,7 +10,7 @@ github: jaimicore
 date: "`r format(Sys.time(), '%B %Y')`"
 profilepic: data/Jaime.jpg
 headcolor: 0570b0
-aboutme: "I am a computational biologist with 11 years of experience in research, sequence analysis, methods development, and data visualisation. I have worked in both the academic and private sector. My main expertise is the development of algorithms to analyze multivariate data and apply these methods in a wider range of biomedical fields such as vaccine design or gene expression."
+aboutme: "I am a computational biologist with 11 years of experience in research, sequence analysis, methods development and data visualisation. I have worked in both the academic and private sector. My main expertise is the development of algorithms to analyze multivariate data and apply them in a wider range of biomedical fields such as vaccine design or gene expression."
 output: 
   vitae::awesomecv:
     keep_tex: false
@@ -69,7 +69,7 @@ jobs <-
 
 # Working Experience
 
-\renewcommand{\arraystretch}{0.85}
+\renewcommand{\arraystretch}{0.95}
 ```{r research_work}
 
 
@@ -98,7 +98,7 @@ jobs %>%
 
 # Toolkit
 
-\renewcommand{\arraystretch}{1.15}
+\renewcommand{\arraystretch}{0.95}
 ```{r Comp_skills}
 
 comp.skills <- jobs %>% 
@@ -140,7 +140,7 @@ formatted_tbl %>%
 
 
 \hspace{0.5cm}
-\footnotesize \textbf{Technical Skills}: clustering, dimensionality reduction, exploratory data analysis (EDA), data wrangling, multivariate analysis, statistical tests, Markov chains, ML (Random Forest, Linear Regression, Logistic Regression), Deep Learning (neural networks), Data Curation, ROC and Precision-Recall curves, pattern discovery, pattern matching.
+\footnotesize \textbf{Technical Skills}: clustering, dimensionality reduction, exploratory data analysis (EDA), data wrangling, multivariate analysis, statistical tests, Markov chains, ML (Random Forest, Linear Regression, Logistic Regression, model evaluation), Deep Learning (neural networks), Data Curation, pattern discovery, pattern matching.
 
 \hspace{0.5cm}
 \footnotesize \textbf{Tools}: jupyter notebooks, Rstudio, emacs, VS code, google docs, Linux (Ubuntu).
