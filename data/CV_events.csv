@@ -9,8 +9,9 @@ Start,End,What,With,Where,Tag,Why,
 01/10/14,01/07/17,PhD scholarship from Ecole Doctorale Sciences de la Vie et de la Sancte,,,Honors_prices,,
 01/09/13,01/07/14,CONACYT (Consejo NAcional de ciencia y Teconologia) scholarship for Master studies,,,Honors_prices,,
 01/02/13,01/06/13,Programming with R,Bachelor in genomic sciences program,"Cuernavaca, Mexico",Teaching,Teaching assistant. Bachelor level,
-01/02/13,01/06/13,"Applications of the genomics, seminars.",Bachelor in genomic sciences program,"Cuernavaca, Mexico",Teaching,Teaching assistant. Bachelor level,
+01/02/13,01/06/13,"Applications of genomics, seminars.",Bachelor in genomic sciences program,"Cuernavaca, Mexico",Teaching,Teaching assistant. Bachelor level,
 01/04/16,01/04/17,Analysis of Cis-Regulatory Sequences,Aix-Marseille Universite,"Marseille, France",Teaching,Teaching assistant. Master level,
+01/04/16,01/04/17,Analysis of Cis-Regulatory Sequences,Universitet I Oslo ,"Oslo, Norway",Teaching,Lecturer. PhD level,
 22/07/19,22/07/19,Combining transcriptional and post-transcriptional regulation to predict mutations altering the gene regulatory program in cancer cells,ISMB/ECCB 2019,"Basel, Switzerland",Presentations,,
 01/11/16,01/11/16,RSAT matrix-clustering: dynamic exploration and redundancy reduction of transcription factor binding motif collections.,1st Student Symposium on Computational Genomics,"Mainz,Germany",Presentations,,
 ,,Python,Proficient,,Comp_skills,"Programming language;pandas, polars, seaborn, plotly, NumPy, scikit-learn, object-oriented programming.",
@@ -20,6 +21,7 @@ Start,End,What,With,Where,Tag,Why,
 ,,HTML / CSS,Intermediate,,Comp_skills,Programming language,Development of interactive websites.
 ,,D3,Intermediate,,Comp_skills,Programming language,Development of interactive hierarchical trees.
 ,,JavaScript,Beginner,,Comp_skills,Programming language,"Basic animation, styling and interactive features."
+,,Rust,Beginner,,Comp_skills,Programming language,Basic scripting.
 ,,SQL,Beginner,,Comp_skills,"Databases; Queries, subqueries, join operations.",
 ,,Snakemake,Proficient,,Comp_skills,Pipeline Development,Development of pipelines for analysis of NGS data.
 ,,GNU make,Intermediate,,Comp_skills,Pipeline Development,Automating bioinformatics workflows.
